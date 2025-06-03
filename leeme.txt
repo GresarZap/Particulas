@@ -1,0 +1,2 @@
+index es el archivo principal, se debe lebantar un servidor.
+Se recomienda usar una extesion de vscode como liveserver debido a que wamp o xamp manejan las rutas de otra forma y podria traer problemas.
