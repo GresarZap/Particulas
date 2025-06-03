@@ -207,9 +207,9 @@ class Particula {
 
     actualizar(dt) {
         this.vida += dt;
-        this.alfa -= 0.7 * dt;   // en lugar de 0.01 por frame
-        this.tam += 2 * dt;      // en lugar de 0.04 por frame
-        this.rot += 180 * dt;    // en lugar de 1 por frame (180 grados por segundo)
+        this.alfa -= 0.01;
+        this.tam += 0.04;
+        this.rot += 1;
     }
 
     estaViva() {
