@@ -39,6 +39,9 @@ let uAlpha = 1;
 async function main() {
     gl = iniWebgl();
 
+    gl.enable(gl.BLEND);
+    gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
+
     shader = await creaShader(gl);
     programaID = vinculaShader(gl, shader[0], shader[1]);
     // background(gl, [0, 0, 0, 1]);
